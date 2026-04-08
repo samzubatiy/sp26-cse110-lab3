@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting minutes for the Pomodoro Timer team">
+    <title>Pomodoro Timer Brainstorm</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+    <header>
+      <h1>Pomodoro Timer First Brainstorm</h1>
+      <h2>Topic: Brainstorming & Architecture</h2>
+      <h3>Date: April 10, 2026</h3>
+      
+      <nav>
+        <p><strong>Quick Navigation:</strong></p>
+        <ul>
+          <li><a href="#attendance">Attendance & Agenda</a></li>
+          <li><a href="#business">Meeting Business</a></li>
+          <li><a href="#media">Media & Diagrams</a></li>
+          <li><a href="#feedback">Team Feedback Form</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+      <section id="attendance">
+        <div>
+          <h3>Attendance List</h3>
+          <ul>
+            <li>Samuel Zubatiy</li>
+            <li>Mo Bitar</li>
+            <li>Professor Powell (Guest)</li>
+          </ul>
+        </div>
+
+        <details>
+          <summary>Click to view the Agenda</summary>
+          <ol>
+            <li>Review unfinished business from last quarter</li>
+            <li>Brainstorm new architecture</li>
+            <li>Record meeting audio/video</li>
+            <li>Open floor for misc comments</li>
+          </ol>
+        </details>
+      </section>
+
+      <section id="business">
+        <h4>Unfinished Business</h4>
+        <p><em>We still need to figure out</em> how to properly structure our Git branches. We struggled with this last time, but I am <i>highly motivated</i> to get it right this quarter.</p>
+        
+        <h4>New Business</h4>
+        <p>We need to decide on our tech stack. We will strictly use semantic HTML to bridge the gap between our document structure and browser accessibility.</p>
+        
+        <h4>Miscellaneous Comments</h4>
+        <span>Everyone needs to remember to take a break.</span><br>
+        <span>Burnout is real!</span>
+      </section>
+
+      <section id="media">
+        <h4>Meeting Media</h4>
+        <p>Here is the picture of the diagram we drew on the whiteboard:</p>
+        <img src="board.jpg" alt="Whiteboard architecture diagram for the Pomodoro timer" width="400">
+
+        <p>Meeting Audio Recording:</p>
+        <audio controls>
+          <source src="meeting.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <p>Meeting Video Recording:</p>
+        <video width="400" controls>
+          <source src="meeting.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <hr>
+
+      <section id="feedback">
+        <h2>Unrelated Developer Survey Form</h2>
+        <form action="#" method="GET">
+          <fieldset>
+            <legend>Developer Info</legend>
+            
+            <label for="devname">Name:</label>
+            <input type="text" id="devname" name="devname"><br><br>
+
+            <label for="startdate">Start Date:</label>
+            <input type="date" id="startdate" name="startdate"><br><br>
+
+            <p>Select your favorite track:</p>
+            <input type="radio" id="frontend" name="track" value="frontend">
+            <label for="frontend">Front-end</label><br>
+            <input type="radio" id="backend" name="track" value="backend">
+            <label for="backend">Back-end</label><br><br>
+
+            <input type="checkbox" id="coffee" name="coffee" value="yes">
+            <label for="coffee">I drink coffee</label><br><br>
+
+            <label for="browser">Choose a browser from this datalist:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+              <option value="Chrome">
+              <option value="Firefox">
+              <option value="Safari">
+            </datalist><br><br>
+
+            <label for="role">Select your role:</label>
+            <select id="role" name="role">
+              <option value="junior">Junior Engineer</option>
+              <option value="senior">Senior Engineer</option>
+              <option value="lead">Team Lead</option>
+            </select><br><br>
+
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+
+            <button type="submit">Submit Survey</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <p>End of meeting minutes. Prepared by Samuel Zubatiy.</p>
+    </footer>
+
+  </body>
+</html>
