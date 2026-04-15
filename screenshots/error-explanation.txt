@@ -1,2 +1,3 @@
 Error 1 (color(srgb 0.9 0.9 0.9)): This is the Wider-gamut color requirement from the lab instructions. I belive that modern browsers (like Chrome and Safari) understand this perfectly, but the W3C validator hasn't fully updated its dictionary to recognize the color() function yet.
+
 Error 2 (& ul): This is the Nested Selector requirement from the lab instructions. As the professor noted, this was only widely adopted by web browsers in December 2023. The validator simply doesn't know what the & symbol means yet and thinks it's a typo.
