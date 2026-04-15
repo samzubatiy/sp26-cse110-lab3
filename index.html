@@ -5,13 +5,26 @@
     <meta name="description" content="Meeting Minutes for Sam Zubatiy and Friends">
     <title>Meeting Minutes for Sam Zubatiy and his Dog</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      header h1 {
+        text-decoration: underline;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
 
     <header>
       <h1>Meeting Minutes for Sam Zubatiy and his Dog</h1>
-      <h2>Topic: Brainstorming Frienship</h2>
-      <h3>Date: April 8, 2026</h3>
+      <h2 style="color: blue; text-align: center;">Topic: Brainstorming Frienship</h2>
+      <h3 style="text-align: center;">Date: April 8, 2026</h3>
       
       <nav>
         <p><strong>Quick Navigation:</strong></p>
@@ -49,7 +62,7 @@
 
       <section id="business">
         <h4>Unfinished Business</h4>
-        <p><em>We still need to figure out</em> how to get shiny to stop biting. We struggled with this last meeting, but I am <i>highly motivated</i> to get it right this time.</p>
+        <p class="highlight"><em>We still need to figure out</em> how to get shiny to stop biting. We struggled with this last meeting, but I am <i>highly motivated</i> to get it right this time.</p>
         
         <h4>New Business</h4>
         <p>We need to decide on our new tricks. We will strictly practice all the very simple ones. It's time to level it up and teach Shiny how to do a backflip or something.</p>
@@ -62,17 +75,18 @@
       <section id="media">
         <h4>Meeting Media</h4>
         <p>Here is the picture of the diagram we (Proffessor Powell and I) drew on the whiteboard:</p>
-        <img src="board.jpg" alt="Whiteboard architecture diagram for the Pomodoro timer" width="400">
-
-        <p>Meeting Audio Recording:</p>
-        <audio controls>
-          <source src="meeting.mp3" type="audio/mpeg">
-        </audio>
-
-        <p>Meeting Video Recording:</p>
-        <video width="400" controls>
-          <source src="meeting.mp4" type="video/mp4">
-        </video>
+        
+        <div class="media-grid">
+          <img src="board.jpg" alt="Whiteboard architecture diagram for the Pomodoro timer">
+          
+          <audio controls>
+            <source src="meeting.mp3" type="audio/mpeg">
+          </audio>
+  
+          <video controls>
+            <source src="meeting.mp4" type="video/mp4">
+          </video>
+        </div>
       </section>
 
       <hr>

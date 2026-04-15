@@ -1,0 +1,177 @@
+/* --- 1. GENERAL CSS TOPICS --- */
+/* (This is the Comment requirement) */
+
+/* CSS Variables & Fallbacks */
+:root {
+    --main-bg-color: #f4f4f9; /* #Hex color */
+  }
+  
+  /* Universal Selector */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Element Selector */
+  body {
+    /* Using Variable with Fallback */
+    background-color: var(--main-bg-color, lightgray);
+    /* 3rd Party Font */
+    font-family: 'Comic Neue', sans-serif; 
+    /* Color: rgb() */
+    color: rgb(30, 30, 30);
+    /* Margin Short */
+    margin: 10px 20px 10px 20px; /* Absolute Unit: px */
+  }
+  
+  /* Selector List */
+  h1, h2 {
+    /* Color name */
+    background-color: orange;
+  }
+  
+  /* Descendant Combinator */
+  nav ul {
+    /* Flexbox (Layout 1) */
+    display: flex;
+    flex-direction: row; /* Flex attr 1 */
+    justify-content: space-around; /* Flex attr 2 */
+    align-items: center; /* Flex attr 3 */
+    
+    /* Padding Long */
+    padding-top: 1em; /* Relative unit: em */
+    padding-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Child Combinator */
+  main > section {
+    /* Margin Long */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5%; /* Relative unit: % */
+    margin-right: 5%;
+    /* Padding Short */
+    padding: 10px;
+  }
+  
+  /* Class Selector & Combining Two Selectors */
+  p.highlight {
+    /* hsl() color */
+    background-color: hsl(60, 100%, 80%);
+  }
+  
+  /* Adjacent Sibling Combinator */
+  h4 + p {
+    /* Wider-gamut color-mix() */
+    color: color-mix(in srgb, red 60%, black);
+  }
+  
+  /* General Sibling Combinator */
+  h4 ~ span {
+    /* Display: inline-block */
+    display: inline-block;
+    font-size: 14pt; /* Absolute unit: pt */
+  }
+  
+  /* Class Selector (Grid wrapper) */
+  .media-grid {
+    /* Grid (Layout 2) */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Grid attr 1 */
+    gap: 15px; /* Grid attr 2 */
+    justify-items: center; /* Grid attr 3 */
+  }
+  
+  /* Sizing requirements */
+  img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-width: 150px;
+  }
+  
+  /* ID Selector */
+  #feedback {
+    /* Margin Auto */
+    margin: 20px auto;
+    
+    /* Borders Long */
+    border-style: dashed;
+    border-color: rgba(255, 0, 0, 0.5); /* rgba() color */
+    border-width: 4px;
+  }
+  
+  /* Element Selector */
+  fieldset {
+    /* Borders Short & border-radius */
+    border: 2px solid #333333; 
+    border-radius: 10px;
+  }
+  
+  /* Attribute Selector */
+  input[type="text"] {
+    width: 5cm; /* Absolute unit: cm */
+    /* Wider-gamut color() */
+    background-color: color(srgb 0.9 0.9 0.9);
+  }
+  
+  /* Display: none (hiding the hr just to hit the rubric) */
+  hr {
+    display: none;
+  }
+  
+  /* Position Requirements */
+  footer {
+    /* Position 1 */
+    position: relative;
+    text-align: center; /* Text alignment */
+  }
+  
+  nav strong {
+    /* Position 2 */
+    position: sticky;
+    top: 0;
+    display: block; /* Display block */
+  }
+  
+  /* Pseudo-class Selectors */
+  a:hover {
+    color: red;
+    text-decoration: none; /* Text decoration */
+  }
+  
+  button:active {
+    background-color: darkgray;
+  }
+  
+  /* --- NEW SELECTORS (Adopted 2023) --- */
+  
+  /* :has() Selector */
+  section:has(form) {
+    background-color: lightyellow;
+  }
+  
+  /* Nested Selectors */
+  #attendance {
+    border: 2px solid black;
+    
+    /* Nesting the unordered list inside #attendance */
+    & ul {
+      list-style-type: square;
+      padding-left: 5vw; /* Relative unit: vw */
+    }
+  }
+  
+  /* --- RESPONSIVENESS --- */
+  /* Media Query based on screen width */
+  @media (max-width: 600px) {
+    .media-grid {
+      grid-template-columns: 1fr; /* Stack items vertically on phones */
+    }
+    
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
