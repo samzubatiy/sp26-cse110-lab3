@@ -24,10 +24,11 @@
   }
   
   /* Selector List */
-  h1, h2 {
-    /* Color name */
-    background-color: orange;
-  }
+  /* Selector List */
+   h1, h2 {
+     /* Color name */
+     background-color: lightblue;
+   }
   
   /* Descendant Combinator */
   nav ul {
@@ -84,7 +85,8 @@
   }
   
   /* Sizing requirements */
-  img {
+  /* Sizing requirements */
+  img, video {
     width: 100%;
     max-width: 400px;
     height: auto;
