@@ -25,10 +25,10 @@
   
   /* Selector List */
   /* Selector List */
-   h1, h2 {
-     /* Color name */
-     background-color: lightblue;
-   }
+  h1, h2 {
+    /* Color name */
+    background-color: lightblue;
+  }
   
   /* Descendant Combinator */
   nav ul {
