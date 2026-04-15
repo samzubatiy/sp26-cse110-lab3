@@ -3,6 +3,7 @@
 **Date:** [MM/DD/YYYY]  
 **Sprint Number:** [Sprint X]  
 **Facilitator:** [Name]  
+**Participants:** [Names:]
 
 ---
 
