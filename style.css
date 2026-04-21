@@ -1,7 +1,7 @@
 /* --- 1. GENERAL CSS TOPICS --- */
 /* (This is the Comment requirement) */
 
-/* CSS Variables & Fallbacks */
+/* CSS Variables and Fallbacks */
 :root {
     --main-bg-color: #f4f4f9; /* #Hex color */
   }
@@ -77,7 +77,7 @@
   
   /* Class Selector (Grid wrapper) */
   .media-grid {
-    /* Grid (Layout 2) */
+    /* Grid (layout 2) */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Grid attr 1 */
     gap: 15px; /* Grid attr 2 */
