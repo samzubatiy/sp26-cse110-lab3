@@ -56,7 +56,7 @@
     padding: 10px;
   }
   
-  /* Class Selector & Combining Two Selectors */
+  /* Class Selector and Combining Two Selectors */
   p.highlight {
     /* hsl() color */
     background-color: hsl(60, 100%, 80%);
